@@ -1,0 +1,34 @@
+{
+  "run": "20261110_021034_theme1_circle_matlab_sim_m1",
+  "kind": "circle",
+  "sim": true,
+  "land_reason": "lap complete",
+  "flight_time_s": 30.52,
+  "depth": {
+    "apparent_size_cm": 21.38,
+    "drone_wall_dist_cm": 29.045837231057064,
+    "scale_to_drone_plane": 0.93545369504209541
+  },
+  "track": {
+    "e0_cm": -24.091,
+    "band_cm": 5,
+    "rise_time_s": 0.79999999999999893,
+    "overshoot_cm": 2.999,
+    "overshoot_pct": 12.448632269312192,
+    "peak_time_s": 8.2,
+    "settling_time_s": 1.1199999999999992,
+    "settling_time_3cm_s": 19.36,
+    "steady_from_s": 1.1199999999999992,
+    "ss_mean_cm": 1.1801087786259541,
+    "ss_mean_abs_cm": 1.8626736641221373,
+    "ss_rms_cm": 2.1570359456000467,
+    "ss_max_cm": 5.088,
+    "ss_p95_cm": 3.9943999999999984,
+    "on_line_pct": 100,
+    "on_white_pct": 59.351145038167942,
+    "track_time_s": 22.04,
+    "mean_speed_cm_s": 21.376134301270415,
+    "progress": 0.9988,
+    "ss_rms_drone_plane_cm": 2.0178072456501841
+  }
+}

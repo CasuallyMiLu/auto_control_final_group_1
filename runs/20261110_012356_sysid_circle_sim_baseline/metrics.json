@@ -1,0 +1,12 @@
+{
+ "run": "20261110_012356_sysid_circle_sim_baseline",
+ "kind": "circle",
+ "sim": true,
+ "land_reason": "identification program finished",
+ "flight_time_s": 89.0,
+ "depth": {
+  "apparent_size_cm": 23.706,
+  "drone_wall_dist_cm": 70.34927866362946,
+  "scale_to_drone_plane": 0.8436682696363791
+ }
+}

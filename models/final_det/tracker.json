@@ -1,0 +1,41 @@
+{
+ "run": "final_y26s_det_960",
+ "task": "det",
+ "imgsz": 960,
+ "mode": "fuse",
+ "kalman": true,
+ "q": 20000000.0,
+ "conf": 0.1,
+ "fusion": {
+  "bg_scale": 0.5,
+  "bg_warmup": 30,
+  "bg_alpha": 0.02,
+  "bg_mask_conf": 0.2,
+  "thr_hi": 30,
+  "thr_lo": 12,
+  "roi_pad": 0.15,
+  "min_fill": 0.1,
+  "max_box_frac": 0.25,
+  "motion_px": 1.0,
+  "conf_reacquire": 0.5,
+  "gate_px": 120,
+  "coast": 0,
+  "kalman_r": 9.0,
+  "static_s": 3.0,
+  "static_px": 1.5
+ },
+ "val_metrics": {
+  "mAP50": 0.966,
+  "mAP50_95": 0.853,
+  "note": "ultralytics val on held-out F_circle2/F_path1 + Lab2 val"
+ },
+ "workstation_latency_ms": 7.298982236534357,
+ "workstation_setting": {
+  "mode": "fuse",
+  "kalman": true,
+  "q": 20000000,
+  "conf": 0.1,
+  "coast": 10
+ },
+ "tracker_note": "Lab2 y26s_det_960 fine-tuned on the 2026-11-09 final-project videos (BSM-labelled, square/circle1/path2 + laser negatives; val circle2/path1) + Lab2 dataset; fuse + Kalman"
+}

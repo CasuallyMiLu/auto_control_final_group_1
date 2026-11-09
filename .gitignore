@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+# TensorRT engines only run on the GPU + TensorRT version that built them: rebuild with tools/build_engine.py
+*.engine
+*.onnx
+# large / regenerated per flight
+runs/**/*.mp4
+runs/camera_*.jpg
+matlab/*.txt
+*.asv

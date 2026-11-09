@@ -1,0 +1,56 @@
+{
+  "x_doc": "PIDF from matlab/design_pid.m (pidtune, PM 60 deg) for P(s)=e^{-Ls}/(s(tau s+1)) of prior",
+  "source": "design_pid:prior",
+  "cross": {
+    "x": {
+      "Kp": 1.9546967958678,
+      "Ki": 0.033063101462557171,
+      "Kd": 0.67266014338683178,
+      "N": 15
+    },
+    "y": {
+      "Kp": 1.9532129835231313,
+      "Ki": 0.033066000198411404,
+      "Kd": 0.57544463797277834,
+      "N": 15
+    }
+  },
+  "point_axes": {
+    "x": {
+      "Kp": 1.6166474719951645,
+      "Ki": 0.021918770577232651,
+      "Kd": 0.465007522328495,
+      "N": 15
+    },
+    "y": {
+      "Kp": 1.6072385213523459,
+      "Ki": 0.021805067971724594,
+      "Kd": 0.38746827785591831,
+      "N": 15
+    }
+  },
+  "path": {
+    "v_max": 22,
+    "a_lat": 18,
+    "a_long": 25,
+    "v_min": 6,
+    "e_ff0": 30,
+    "reach_cm": 5,
+    "i_zone": 15,
+    "i_max": 20,
+    "ff_lead_cm": 5,
+    "search_fwd": 40
+  },
+  "point": {
+    "v_max": 40,
+    "target_tau": 0.15,
+    "deadband": 1.5,
+    "i_zone": 12,
+    "i_max": 15
+  },
+  "actuator": {
+    "rc_max": 60,
+    "accel_max": 200
+  },
+  "predict_s": 0
+}

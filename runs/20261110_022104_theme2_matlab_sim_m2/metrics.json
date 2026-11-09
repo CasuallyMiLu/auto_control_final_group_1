@@ -1,0 +1,37 @@
+{
+  "run": "20261110_022104_theme2_matlab_sim_m2",
+  "kind": "path",
+  "sim": true,
+  "land_reason": "landing zone",
+  "flight_time_s": 34.8,
+  "depth": {
+    "apparent_size_cm": 21.37,
+    "drone_wall_dist_cm": 28.848853532990177,
+    "scale_to_drone_plane": 0.93589143659335516
+  },
+  "track": {
+    "e0_cm": 4.149,
+    "band_cm": 5,
+    "settling_time_s": 0,
+    "settling_time_3cm_s": 14.720000000000002,
+    "steady_from_s": 0,
+    "ss_mean_cm": 0.62789236790606662,
+    "ss_mean_abs_cm": 1.4886908023483363,
+    "ss_rms_cm": 1.8572168649261045,
+    "ss_max_cm": 4.541,
+    "ss_p95_cm": 3.7552499999999993,
+    "on_line_pct": 100,
+    "on_white_pct": 74.168297455968684,
+    "track_time_s": 20.44,
+    "mean_speed_cm_s": 15.710861056751467,
+    "progress": 0.8803,
+    "ss_rms_drone_plane_cm": 1.7381533597810992
+  },
+  "laser": {
+    "laser_dist_mean_cm": 23.877473020875506,
+    "laser_dist_rms_cm": 24.044188496529074,
+    "laser_phase_s": 8.759999999999998,
+    "laser_seen_pct": 99.545454545454547
+  },
+  "race_time_s": 34.8
+}

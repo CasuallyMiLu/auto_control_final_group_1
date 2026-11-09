@@ -1,0 +1,52 @@
+{
+  "run": "20261110_021256_theme1_square_matlab_sim_m1",
+  "kind": "square",
+  "sim": true,
+  "land_reason": "lap complete",
+  "flight_time_s": 50.44,
+  "depth": {
+    "apparent_size_cm": 21.76,
+    "drone_wall_dist_cm": 36.397058823529434,
+    "scale_to_drone_plane": 0.91911764705882348
+  },
+  "track": {
+    "e0_cm": -25.643,
+    "band_cm": 5,
+    "rise_time_s": 1,
+    "overshoot_cm": 1.45,
+    "overshoot_pct": 5.654564598525913,
+    "peak_time_s": 7.6,
+    "settling_time_s": 1.2400000000000002,
+    "settling_time_3cm_s": 19.36,
+    "steady_from_s": 1.2400000000000002,
+    "ss_mean_cm": 0.0189286432160804,
+    "ss_mean_abs_cm": 1.1385386934673367,
+    "ss_rms_cm": 1.4351982287401606,
+    "ss_max_cm": 5.148,
+    "ss_p95_cm": 2.83725,
+    "on_line_pct": 100,
+    "on_white_pct": 85.025125628140714,
+    "track_time_s": 41,
+    "mean_speed_cm_s": 14.953414634146343,
+    "progress": 0.999,
+    "ss_rms_drone_plane_cm": 1.3191160190626474
+  },
+  "corners": [
+    {
+      "corner_s_cm": 75,
+      "max_abs_e_cm": 2.292
+    },
+    {
+      "corner_s_cm": 225,
+      "max_abs_e_cm": 4.429
+    },
+    {
+      "corner_s_cm": 375,
+      "max_abs_e_cm": 1.481
+    },
+    {
+      "corner_s_cm": 525,
+      "max_abs_e_cm": 1.402
+    }
+  ]
+}

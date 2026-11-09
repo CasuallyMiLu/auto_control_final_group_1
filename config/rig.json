@@ -1,0 +1,67 @@
+{
+ "_doc": "Hardware / scene settings. Wall coordinates: cm, X right, Y up as seen from the camera.",
+ "camera": {
+  "index": "auto",
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "fourcc": "MJPG",
+  "backend": "dshow",
+  "record_raw": true,
+  "_index": "auto = first camera 0..4 whose image contains this scene's board; or a number"
+ },
+ "camera_distance_cm": 450,
+ "camera_height_cm": 130,
+ "drone_size_cm": 20,
+ "up_hint": "auto",
+ "_up_hint": "auto | up | right | down | left : image direction that is physically UP. auto = from the track shape (theme 2) or floor colour + a short climb after take-off (theme 1).",
+ "geometry": {
+  "centre_line_cm": 150,
+  "band_cm": 20,
+  "path_width_cm": 20,
+  "blue_cm": 20
+ },
+ "closed_path": {
+  "direction": "ccw",
+  "start_angle_deg": {
+   "circle": -45,
+   "square": -90
+  },
+  "laps": 1.0,
+  "_start": "start point: direction from the track centre (deg, 0 = right, -90 = bottom). circle: bottom-right as on the course sheet; square: middle of the bottom edge (clean step before the first corner)"
+ },
+ "vision": {
+  "detector": "yolo",
+  "model_dir": "models/final_det",
+  "work_margin_cm": 60,
+  "conf": 0.25,
+  "coast": 3,
+  "min_box_cm": 6,
+  "max_box_cm": 60
+ },
+ "tello": {
+  "ip": "192.168.10.1",
+  "min_battery": 30
+ },
+ "safety": {
+  "lost_hover_s": 0.4,
+  "lost_land_s": 3.0,
+  "bounds_margin_cm": 45,
+  "max_flight_s": 240,
+  "takeoff_timeout_s": 12,
+  "acquire_timeout_s": 8
+ },
+ "theme2": {
+  "land_zone": "blue_low",
+  "land_offset_cm": [
+   0,
+   0
+  ],
+  "land_radius_cm": 15,
+  "land_hold_s": 0.0,
+  "laser_lost_hold_s": 0.6,
+  "_land": "land_trigger: zone = land as soon as the drone is over the lower blue square (C); laser_off = land when the operator switches the laser off (0.7 s without dot, after it was used); key = only by pressing L. The black obstacle is never used in flight.",
+  "land_trigger": "zone",
+  "laser_off_s": 0.7
+ }
+}

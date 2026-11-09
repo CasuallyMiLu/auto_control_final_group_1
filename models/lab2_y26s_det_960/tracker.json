@@ -1,0 +1,45 @@
+{
+  "run": "y26s_det_960",
+  "task": "det",
+  "imgsz": 960,
+  "mode": "fuse",
+  "kalman": true,
+  "q": 20000000.0,
+  "conf": 0.1,
+  "fusion": {
+    "bg_scale": 0.5,
+    "bg_warmup": 30,
+    "bg_alpha": 0.02,
+    "bg_mask_conf": 0.2,
+    "thr_hi": 30,
+    "thr_lo": 12,
+    "roi_pad": 0.15,
+    "min_fill": 0.1,
+    "max_box_frac": 0.25,
+    "motion_px": 1.0,
+    "conf_reacquire": 0.5,
+    "gate_px": 120,
+    "coast": 0,
+    "kalman_r": 9.0,
+    "static_s": 3.0,
+    "static_px": 1.5
+  },
+  "val_metrics": {
+    "hit_rate": 100.0,
+    "false_alarms": 1,
+    "f1": 99.9559277214632,
+    "rmse": 6.500032538308456,
+    "median": 5.335037573548352,
+    "p95": 11.545534330833242,
+    "jitter": 0.9502395987461212
+  },
+  "workstation_latency_ms": 7.298982236534357,
+  "workstation_setting": {
+    "mode": "fuse",
+    "kalman": true,
+    "q": 20000000,
+    "conf": 0.1,
+    "coast": 10
+  },
+  "tracker_note": "fuse + Kalman (q 2e7, no coasting) + static-spot filter 3 s / 1.5 px; chosen on TA + 18 new held-out videos (infer/eval_newval_local.py)"
+}

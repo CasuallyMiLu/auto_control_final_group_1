@@ -1,0 +1,6 @@
+{
+  "_doc": "Plant used by the controller and the simulator: v_ss = B @ [rc_a, rc_c] (cm/s on the wall plane), per axis P(s) = e^{-Ls}/(s(tau s+1)). PRIOR VALUES (course sheet: rc 100 ~ 1 m/s). Replaced by matlab/sysid_tello.m after the identification flight.",
+  "source": "prior",
+  "B": [[1.0, 0.0], [0.0, 1.0]],
+  "axes": {"x": {"Kv": 1.0, "tau": 0.35, "L": 0.18}, "y": {"Kv": 1.0, "tau": 0.30, "L": 0.18}}
+}

@@ -1,0 +1,39 @@
+{
+ "run": "20261110_013110_theme2_sim_baseline",
+ "kind": "path",
+ "sim": true,
+ "land_reason": "landing zone",
+ "flight_time_s": 30.48,
+ "depth": {
+  "apparent_size_cm": 23.559,
+  "drone_wall_dist_cm": 67.98038966000257,
+  "scale_to_drone_plane": 0.8489324674222165
+ },
+ "track": {
+  "e0_cm": 4.139,
+  "band_cm": 5.0,
+  "settling_time_s": 0.0,
+  "settling_time_3cm_s": 16.68,
+  "steady_from_s": 0.0,
+  "ss_mean_cm": 0.9782482915717539,
+  "ss_mean_abs_cm": 1.4599567198177679,
+  "ss_rms_cm": 1.8260804502907149,
+  "ss_max_cm": 4.876,
+  "ss_p95_cm": 3.3154999999999997,
+  "on_line_pct": 100.0,
+  "on_white_pct": 67.42596810933941,
+  "step_window_s": 17.560000000000002,
+  "track_time_s": 17.560000000000002,
+  "mean_speed_cm_s": 19.61366742596811,
+  "progress": 0.93,
+  "ss_rms_drone_plane_cm": 1.5502189823767687
+ },
+ "laser": {
+  "laser_dist_mean_cm": 23.23285638473772,
+  "laser_dist_rms_cm": 23.749975335930067,
+  "laser_dist_p95_cm": 25.581844574705503,
+  "laser_phase_s": 7.960000000000001,
+  "laser_seen_pct": 99.5
+ },
+ "race_time_s": 30.48
+}
