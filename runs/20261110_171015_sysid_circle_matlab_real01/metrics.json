@@ -1,0 +1,12 @@
+{
+  "run": "20261110_171015_sysid_circle_matlab_real01",
+  "kind": "circle",
+  "sim": false,
+  "land_reason": "GOTO timeout",
+  "flight_time_s": 38.864000000000004,
+  "depth": {
+    "apparent_size_cm": 28.54,
+    "drone_wall_dist_cm": 134.65311843027334,
+    "scale_to_drone_plane": 0.70077084793272582
+  }
+}

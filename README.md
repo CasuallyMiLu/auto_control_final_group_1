@@ -5,6 +5,8 @@
 
 **主程式是 MATLAB**（`matlab/`）。Python 版本（`theme1.py`…）功能相同，保留做對照，說明在 [docs/python_version.md](docs/python_version.md)。
 
+**首次真機操作**請先讀 [離線操作單](docs/tello_sysid_offline_guide_zh.md)；交接與目前辨識結果見 [2026-11-10 真機辨識交接](docs/sysid_handoff_20261110.md)。
+
 ---
 
 ## 快速開始（MATLAB）
@@ -58,10 +60,12 @@ MATLAB 會自動用 `.venv/Scripts/python.exe`（`pyenv` OutOfProcess）。
 ```matlab
 cd matlab
 sysid_flight('circle')                                   % 1. 約 100 秒：懸停 + X/Y 開迴路 doublet + PRBS
-sysid_tello('../runs/<sysid 資料夾>', true)              % 2. procest P1DI + tfest（Lab1 做法）-> config/model.json
-design_pid([], 60, true)                                 % 3. pidtune（Lab3 做法，PM 60°）-> config/gains.json
-theme1('circle'); theme1('square'); theme2()             % 4. 飛
-theme1('circle', 'set', {'path.v_max=30', 'cross.x.Kp=2.2'})   % 5. 微調（不用改程式）
+M = sysid_tello('../runs/<sysid 資料夾>', false)         % 2. 初步辨識與獨立驗證，先不覆寫設定
+% 檢查資料品質、延遲、殘差與跨次驗證後，才選做：
+% sysid_tello('../runs/<sysid 資料夾>', true)              % 寫回正式模型
+% design_pid([], 60, true)                                % 3. 依新模型設計 PID，寫回 gains.json
+% theme1('circle'); theme1('square'); theme2()             % 4. 分階段驗證實機控制
+% theme1('circle', 'set', {'path.v_max=30', 'cross.x.Kp=2.2'}) % 5. 驗證後微調
 ```
 Python 交叉驗證辨識：`.venv/Scripts/python tools/sysid_fit.py runs/<sysid 資料夾>`（同模型 + 每段漂移項）。
 
@@ -88,7 +92,7 @@ Python 交叉驗證辨識：`.venv/Scripts/python tools/sysid_fit.py runs/<sysid
 - **主題 1**：起飛 → 停在起點外 25 cm（固定大小的步階輸入）→ 放開開始循跡，一圈後降落。方形從下邊中點、圓形從右下出發，逆時針。
 - **主題 2**：紅線 A→B 循跡 → 跟雷射點。**黑色障礙物完全不參與控制**（只畫在圖上），繞過障礙物是雷射操作者的工作。
   降落觸發 `config/rig.json` → `theme2.land_trigger`：`zone`（預設：一進入下方藍色方塊上空就降落）、`laser_off`（關掉雷射就降落）、`key`（按 L）。
-- **安全**：看不到無人機 > 0.4 s 懸停、> 3 s 降落；飛出工作範圍降落；程式出錯或 Ctrl-C 自動降落。
+- **保護機制**：追蹤遺失、越界與程式中止時有懸停／降落處理；指令能否執行仍取決於通訊與設備，需現場監看。目前電量只在起飛前檢查（30% 門檻），**尚未加入飛行中的低電量降落判斷**。
 
 ## 時域規格定義（程式計算，`matlab/+ft/analyze_run.m`）
 循跡誤差 e_n(t) = 無人機到白線的有號垂直距離（cm）。從起點外 25 cm 放開就是步階：
@@ -98,9 +102,10 @@ Python 交叉驗證辨識：`.venv/Scripts/python tools/sysid_fit.py runs/<sysid
 牆面 cm 與無人機實際 cm 差 L/(L−d) 倍（d = 無人機離牆距離，由視大小估計），metrics 有換算值。
 
 ## 目前狀態（給組員）
-- 全部程式（MATLAB 與 Python）都在**模擬**中從起飛跑到降落；**還沒有真機飛行資料**。
-- `config/model.json`、`config/gains.json` 目前是**先驗值**（rc 100 ≈ 1 m/s、τ 0.35 s、L 0.18 s，pidtune 設計）。
-  第一步：真機跑 `sysid_flight('circle')`，用辨識結果重新設計增益。
+- 2026-11-10 已取得 **4 次真機辨識紀錄**：`171015`（GOTO timeout）、`172242`（越界）、`174033` 與 `174633`（流程結束）。後兩次已有兩軸 P1DI / tfest 初步模型。
+- **初步估算已完成，可靠控制模型的驗證尚未通過**：兩次 X 大振幅段都被截斷，追蹤、電量與延遲仍有疑點。四次紀錄與跨次檢查見 [交接報告](docs/sysid_handoff_20261110.md)。
+- `config/model.json` 仍為先驗值，本次沒有以品質未通過的模型覆寫，也沒有重新設計正式 PID。
+- 已完成一輪自動無風模擬辨識，保留驗證 fit 約 97–99%；此結果只驗證模擬流程，不能代表真機表現。
 - MATLAB 模擬結果（`runs/*_matlab_sim_*`）：
 
 | | e₀ | 上升 | 超越 | 安定(±5 cm) | 穩態誤差 | RMS | 時間 |
@@ -122,9 +127,12 @@ config/                 rig.json（硬體/場景）、model.json（plant）、ga
 models/final_det/       偵測模型 best.pt（微調後），models/lab2_y26s_det_960/ 是 Lab2 原模型
 assets/                 三塊板子的照片 + 無人機貼圖（模擬用）
 data/video_tracks/      6 支場景影片的逐幀追蹤 CSV（影片本身在組內雲端）
-runs/                   模擬結果範例（Python *_sim_baseline、MATLAB *_matlab_sim_*）
+runs/                   模擬與真機紀錄；sysid_review_20261110/ 為離線品質與跨次檢查
 tools/                  check_camera / check_tello（不起飛）、build_engine、sysid_fit、test_vision_video、workstation/（重訓模型）
 docs/python_version.md  Python 版本完整說明
+docs/tello_sysid_offline_guide_zh.md  真機離線操作單
+docs/sysid_handoff_20261110.md       真機辨識結果、限制與後續改進
+matlab/audit_real_sysid.m            只讀取既有模型的離線品質／跨次檢查
 ```
 
 ## 重建 / 繼續

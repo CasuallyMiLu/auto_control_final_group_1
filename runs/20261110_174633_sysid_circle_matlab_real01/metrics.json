@@ -1,0 +1,12 @@
+{
+  "run": "20261110_174633_sysid_circle_matlab_real01",
+  "kind": "circle",
+  "sim": false,
+  "land_reason": "identification program finished",
+  "flight_time_s": 104.50999999999999,
+  "depth": {
+    "apparent_size_cm": 20.47,
+    "drone_wall_dist_cm": 10.332193453834842,
+    "scale_to_drone_plane": 0.97703957010258924
+  }
+}

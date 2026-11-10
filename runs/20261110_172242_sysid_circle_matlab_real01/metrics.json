@@ -1,0 +1,12 @@
+{
+  "run": "20261110_172242_sysid_circle_matlab_real01",
+  "kind": "circle",
+  "sim": false,
+  "land_reason": "left the safe area at X=2, Y=-120 cm",
+  "flight_time_s": 101.435,
+  "depth": {
+    "apparent_size_cm": 19.62,
+    "drone_wall_dist_cm": 0,
+    "scale_to_drone_plane": 1
+  }
+}

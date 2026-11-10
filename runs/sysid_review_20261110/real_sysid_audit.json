@@ -1,0 +1,1698 @@
+{
+  "status": "preliminary_estimation_complete_validation_not_accepted",
+  "analysisTs": 0.033333333333333333,
+  "modelRefitted": false,
+  "note": "Cross-run checks use only complete, screened blocks. Below-30-percent battery remains a flagged confounder. Per-block initial states are estimated.",
+  "screeningPolicy": "No range truncation; valid fraction >=0.98; maximum valid-position gap <=0.2 s; bounding-box height ratio <=2.2. These are audit heuristics, not proof of tracking accuracy or flight safety limits.",
+  "runs": [
+    {
+      "stamp": "171015",
+      "folder": "runs/20261110_171015_sysid_circle_matlab_real01",
+      "endReason": "GOTO timeout",
+      "totalRows": 928,
+      "blocks": [
+        {
+          "axis": "x",
+          "nominalBlock": 1,
+          "start": 28.103,
+          "stop": 32.134,
+          "duration": 4.0309999999999988,
+          "amplitude": 25,
+          "exciteRows": 94,
+          "validFraction": 1,
+          "batteryRange": [
+            47,
+            47
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            130,
+            130
+          ],
+          "boxHeightRange": [
+            25.45,
+            26.61
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.08370000000000033,
+          "screenedComplete": true
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 2,
+          "start": 34.686,
+          "stop": 35.71,
+          "duration": 1.0240000000000009,
+          "amplitude": 25,
+          "exciteRows": 24,
+          "validFraction": 1,
+          "batteryRange": [
+            47,
+            47
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            130,
+            130
+          ],
+          "boxHeightRange": [
+            24.68,
+            126.49
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.082500000000003126,
+          "screenedComplete": false
+        }
+      ],
+      "hasIdentification": false,
+      "batteryRange": [
+        44,
+        47
+      ],
+      "models": {}
+    },
+    {
+      "stamp": "172242",
+      "folder": "runs/20261110_172242_sysid_circle_matlab_real01",
+      "endReason": "left the safe area at X=2, Y=-120 cm",
+      "totalRows": 2390,
+      "blocks": [
+        {
+          "axis": "x",
+          "nominalBlock": 1,
+          "start": 45.352,
+          "stop": 49.378,
+          "duration": 4.0260000000000034,
+          "amplitude": 25,
+          "exciteRows": 94,
+          "validFraction": 1,
+          "batteryRange": [
+            25,
+            27
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            120,
+            120
+          ],
+          "boxHeightRange": [
+            21.29,
+            22.55
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.0765000000000029,
+          "screenedComplete": true
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 2,
+          "start": 50.435,
+          "stop": 55.45,
+          "duration": 5.0150000000000006,
+          "amplitude": 25,
+          "exciteRows": 118,
+          "validFraction": 1,
+          "batteryRange": [
+            22,
+            25
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            120,
+            120
+          ],
+          "boxHeightRange": [
+            21.29,
+            24.63
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.08089999999999975,
+          "screenedComplete": true
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 3,
+          "start": 57.945,
+          "stop": 61.964,
+          "duration": 4.0189999999999984,
+          "amplitude": 40,
+          "exciteRows": 95,
+          "validFraction": 1,
+          "batteryRange": [
+            19,
+            21
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            120,
+            120
+          ],
+          "boxHeightRange": [
+            19.62,
+            21.71
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 2,
+          "maxValidMeasurementGap": 0.082000000000000739,
+          "screenedComplete": true
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 4,
+          "start": 65.308,
+          "stop": 67.112,
+          "duration": 1.8039999999999878,
+          "amplitude": 40,
+          "exciteRows": 42,
+          "validFraction": 1,
+          "batteryRange": [
+            16,
+            17
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            120,
+            120
+          ],
+          "boxHeightRange": [
+            19.21,
+            21.71
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 0,
+          "maxValidMeasurementGap": 0.077700000000007208,
+          "screenedComplete": false
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 5,
+          "start": 75.78,
+          "stop": 77.976,
+          "duration": 2.195999999999998,
+          "amplitude": 30,
+          "exciteRows": 51,
+          "validFraction": 1,
+          "batteryRange": [
+            13,
+            13
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            120,
+            120
+          ],
+          "boxHeightRange": [
+            18.79,
+            19.62
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.07529999999999859,
+          "screenedComplete": false
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 1,
+          "start": 85.541,
+          "stop": 89.557,
+          "duration": 4.0160000000000053,
+          "amplitude": 25,
+          "exciteRows": 92,
+          "validFraction": 1,
+          "batteryRange": [
+            13,
+            13
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            120,
+            130
+          ],
+          "boxHeightRange": [
+            18.37,
+            18.79
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.08280000000000598,
+          "screenedComplete": true
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 2,
+          "start": 90.633,
+          "stop": 95.655,
+          "duration": 5.0220000000000056,
+          "amplitude": 25,
+          "exciteRows": 120,
+          "validFraction": 1,
+          "batteryRange": [
+            11,
+            13
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            110,
+            130
+          ],
+          "boxHeightRange": [
+            18.79,
+            19.21
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 2,
+          "maxValidMeasurementGap": 0.081900000000004525,
+          "screenedComplete": true
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 3,
+          "start": 96.691,
+          "stop": 100.728,
+          "duration": 4.0369999999999919,
+          "amplitude": 40,
+          "exciteRows": 95,
+          "validFraction": 1,
+          "batteryRange": [
+            11,
+            11
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            120,
+            140
+          ],
+          "boxHeightRange": [
+            18.79,
+            19.21
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 2,
+          "maxValidMeasurementGap": 0.083100000000001728,
+          "screenedComplete": true
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 4,
+          "start": 101.775,
+          "stop": 106.787,
+          "duration": 5.0120000000000005,
+          "amplitude": 40,
+          "exciteRows": 114,
+          "validFraction": 0.99122807017543857,
+          "batteryRange": [
+            10,
+            11
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            90,
+            120
+          ],
+          "boxHeightRange": [
+            7.52,
+            19.21
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.088999999999998636,
+          "screenedComplete": false
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 5,
+          "start": 107.834,
+          "stop": 111.336,
+          "duration": 3.5019999999999953,
+          "amplitude": 30,
+          "exciteRows": 83,
+          "validFraction": 1,
+          "batteryRange": [
+            10,
+            10
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            70,
+            130
+          ],
+          "boxHeightRange": [
+            8.35,
+            19.21
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.069199999999995043,
+          "screenedComplete": false
+        }
+      ],
+      "hasIdentification": false,
+      "batteryRange": [
+        9,
+        33
+      ],
+      "models": {}
+    },
+    {
+      "stamp": "174033",
+      "folder": "runs/20261110_174033_sysid_circle_matlab_real01",
+      "endReason": "identification program finished",
+      "totalRows": 2580,
+      "blocks": [
+        {
+          "axis": "x",
+          "nominalBlock": 1,
+          "start": 24.983,
+          "stop": 29.015,
+          "duration": 4.032,
+          "amplitude": 25,
+          "exciteRows": 96,
+          "validFraction": 1,
+          "batteryRange": [
+            46,
+            48
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            100,
+            100
+          ],
+          "boxHeightRange": [
+            20.05,
+            20.89
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 2,
+          "maxValidMeasurementGap": 0.081999999999997186,
+          "screenedComplete": true
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 2,
+          "start": 32.304,
+          "stop": 37.334,
+          "duration": 5.0300000000000011,
+          "amplitude": 25,
+          "exciteRows": 119,
+          "validFraction": 1,
+          "batteryRange": [
+            43,
+            45
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            100,
+            100
+          ],
+          "boxHeightRange": [
+            19.22,
+            21.31
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 2,
+          "maxValidMeasurementGap": 0.082200000000000273,
+          "screenedComplete": true
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 3,
+          "start": 43.723,
+          "stop": 45.895,
+          "duration": 2.1720000000000041,
+          "amplitude": 40,
+          "exciteRows": 52,
+          "validFraction": 1,
+          "batteryRange": [
+            41,
+            41
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            100,
+            100
+          ],
+          "boxHeightRange": [
+            19.22,
+            20.89
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 2,
+          "maxValidMeasurementGap": 0.072900000000004184,
+          "screenedComplete": false
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 4,
+          "start": 55.425,
+          "stop": 57.198,
+          "duration": 1.7730000000000032,
+          "amplitude": 40,
+          "exciteRows": 42,
+          "validFraction": 1,
+          "batteryRange": [
+            38,
+            39
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            110,
+            110
+          ],
+          "boxHeightRange": [
+            18.8,
+            20.89
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 0,
+          "maxValidMeasurementGap": 0.081499999999998352,
+          "screenedComplete": false
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 5,
+          "start": 65.137,
+          "stop": 67.579,
+          "duration": 2.4419999999999931,
+          "amplitude": 30,
+          "exciteRows": 58,
+          "validFraction": 1,
+          "batteryRange": [
+            36,
+            37
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            80,
+            80
+          ],
+          "boxHeightRange": [
+            17.96,
+            19.22
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.079799999999991655,
+          "screenedComplete": false
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 1,
+          "start": 75.838,
+          "stop": 79.84,
+          "duration": 4.0020000000000095,
+          "amplitude": 25,
+          "exciteRows": 94,
+          "validFraction": 1,
+          "batteryRange": [
+            33,
+            34
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            110,
+            120
+          ],
+          "boxHeightRange": [
+            17.96,
+            18.38
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.080599999999989791,
+          "screenedComplete": true
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 2,
+          "start": 80.884,
+          "stop": 85.885,
+          "duration": 5.0010000000000048,
+          "amplitude": 25,
+          "exciteRows": 116,
+          "validFraction": 1,
+          "batteryRange": [
+            31,
+            33
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            100,
+            120
+          ],
+          "boxHeightRange": [
+            17.96,
+            18.38
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.071399999999997021,
+          "screenedComplete": true
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 3,
+          "start": 86.952,
+          "stop": 90.979,
+          "duration": 4.027000000000001,
+          "amplitude": 40,
+          "exciteRows": 93,
+          "validFraction": 1,
+          "batteryRange": [
+            29,
+            30
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            120,
+            140
+          ],
+          "boxHeightRange": [
+            17.96,
+            18.38
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.080999999999988859,
+          "screenedComplete": true
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 4,
+          "start": 92.032,
+          "stop": 97.06,
+          "duration": 5.0280000000000058,
+          "amplitude": 40,
+          "exciteRows": 115,
+          "validFraction": 0.65217391304347827,
+          "batteryRange": [
+            27,
+            29
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            90,
+            120
+          ],
+          "boxHeightRange": [
+            9.19,
+            18.38
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 1.7913000000000068,
+          "screenedComplete": false
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 5,
+          "start": 99.946,
+          "stop": 106.908,
+          "duration": 6.9620000000000033,
+          "amplitude": 30,
+          "exciteRows": 162,
+          "validFraction": 0.98765432098765427,
+          "batteryRange": [
+            22,
+            26
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            50,
+            120
+          ],
+          "boxHeightRange": [
+            7.1,
+            18.38
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 5,
+          "maxValidMeasurementGap": 0.14189999999999259,
+          "screenedComplete": false
+        }
+      ],
+      "hasIdentification": true,
+      "batteryRange": [
+        20,
+        48
+      ],
+      "models": {
+        "x": {
+          "Kv": 1.0806109089747364,
+          "tau": 0.34432349787541783,
+          "L": 0.56653333333333333,
+          "nTrain": 3,
+          "nValid": 2,
+          "originalTrainP": [
+            46.168414131288628,
+            48.847250723268729,
+            73.356199220655157
+          ],
+          "originalValidationP": [
+            60.527230996481364,
+            61.667679917242758
+          ],
+          "originalTrainT": [
+            75.323070578969151,
+            95.01052513511577,
+            88.707447618314561
+          ],
+          "originalValidationT": [
+            71.189351591068359,
+            80.333384506609036
+          ]
+        },
+        "y": {
+          "Kv": 0.99774540251992339,
+          "tau": 0.89563154790567956,
+          "L": 0,
+          "nTrain": 3,
+          "nValid": 3,
+          "originalTrainP": [
+            80.466399477182591,
+            71.2641579263126,
+            68.622128205117079
+          ],
+          "originalValidationP": [
+            76.982999962864042,
+            86.88454000312845,
+            83.43454499614819
+          ],
+          "originalTrainT": [
+            90.783527362026433,
+            77.448663554719445,
+            96.693204854807618
+          ],
+          "originalValidationT": [
+            91.62623085459181,
+            91.563555062204472,
+            78.544059974383543
+          ]
+        }
+      }
+    },
+    {
+      "stamp": "174633",
+      "folder": "runs/20261110_174633_sysid_circle_matlab_real01",
+      "endReason": "identification program finished",
+      "totalRows": 2530,
+      "blocks": [
+        {
+          "axis": "x",
+          "nominalBlock": 1,
+          "start": 19.179,
+          "stop": 23.196,
+          "duration": 4.017000000000003,
+          "amplitude": 25,
+          "exciteRows": 95,
+          "validFraction": 1,
+          "batteryRange": [
+            38,
+            38
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            140,
+            140
+          ],
+          "boxHeightRange": [
+            20.47,
+            20.89
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.082999999999998408,
+          "screenedComplete": true
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 2,
+          "start": 25.205,
+          "stop": 30.21,
+          "duration": 5.0050000000000026,
+          "amplitude": 25,
+          "exciteRows": 119,
+          "validFraction": 1,
+          "batteryRange": [
+            34,
+            37
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            140,
+            150
+          ],
+          "boxHeightRange": [
+            20.47,
+            22.98
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.094699999999999562,
+          "screenedComplete": true
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 3,
+          "start": 31.276,
+          "stop": 33.746,
+          "duration": 2.4700000000000024,
+          "amplitude": 40,
+          "exciteRows": 58,
+          "validFraction": 1,
+          "batteryRange": [
+            33,
+            34
+          ],
+          "belowStartBatteryThreshold": false,
+          "heightRange": [
+            140,
+            150
+          ],
+          "boxHeightRange": [
+            20.89,
+            21.72
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.081700000000001438,
+          "screenedComplete": false
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 4,
+          "start": 48.068,
+          "stop": 49.724,
+          "duration": 1.6559999999999988,
+          "amplitude": 40,
+          "exciteRows": 38,
+          "validFraction": 1,
+          "batteryRange": [
+            25,
+            26
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            140,
+            150
+          ],
+          "boxHeightRange": [
+            21.72,
+            24.23
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 0,
+          "maxValidMeasurementGap": 0.10099999999999909,
+          "screenedComplete": false
+        },
+        {
+          "axis": "x",
+          "nominalBlock": 5,
+          "start": 62.356,
+          "stop": 64.365,
+          "duration": 2.0089999999999932,
+          "amplitude": 30,
+          "exciteRows": 48,
+          "validFraction": 1,
+          "batteryRange": [
+            19,
+            20
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            150,
+            150
+          ],
+          "boxHeightRange": [
+            20.89,
+            22.14
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 0,
+          "maxValidMeasurementGap": 0.082500000000010232,
+          "screenedComplete": false
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 1,
+          "start": 74.499,
+          "stop": 78.507,
+          "duration": 4.00800000000001,
+          "amplitude": 25,
+          "exciteRows": 92,
+          "validFraction": 1,
+          "batteryRange": [
+            17,
+            17
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            150,
+            160
+          ],
+          "boxHeightRange": [
+            18.38,
+            19.22
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.083999999999988972,
+          "screenedComplete": true
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 2,
+          "start": 79.576,
+          "stop": 84.577,
+          "duration": 5.0010000000000048,
+          "amplitude": 25,
+          "exciteRows": 115,
+          "validFraction": 1,
+          "batteryRange": [
+            16,
+            17
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            130,
+            150
+          ],
+          "boxHeightRange": [
+            8.77,
+            19.22
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.081299999999998818,
+          "screenedComplete": true
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 3,
+          "start": 86.552,
+          "stop": 90.585,
+          "duration": 4.032999999999987,
+          "amplitude": 40,
+          "exciteRows": 91,
+          "validFraction": 1,
+          "batteryRange": [
+            16,
+            16
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            150,
+            170
+          ],
+          "boxHeightRange": [
+            18.8,
+            19.22
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 1,
+          "maxValidMeasurementGap": 0.084899999999990428,
+          "screenedComplete": true
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 4,
+          "start": 91.649,
+          "stop": 96.675,
+          "duration": 5.0259999999999962,
+          "amplitude": 40,
+          "exciteRows": 120,
+          "validFraction": 0.95833333333333337,
+          "batteryRange": [
+            15,
+            16
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            120,
+            150
+          ],
+          "boxHeightRange": [
+            7.52,
+            19.22
+          ],
+          "truncated": false,
+          "nonzeroSignSwitches": 2,
+          "maxValidMeasurementGap": 0.16799999999999216,
+          "screenedComplete": false
+        },
+        {
+          "axis": "y",
+          "nominalBlock": 5,
+          "start": 97.717,
+          "stop": 105.336,
+          "duration": 7.619,
+          "amplitude": 30,
+          "exciteRows": 175,
+          "validFraction": 0.98285714285714287,
+          "batteryRange": [
+            14,
+            15
+          ],
+          "belowStartBatteryThreshold": true,
+          "heightRange": [
+            90,
+            160
+          ],
+          "boxHeightRange": [
+            7.94,
+            19.22
+          ],
+          "truncated": true,
+          "nonzeroSignSwitches": 5,
+          "maxValidMeasurementGap": 0.16920000000000357,
+          "screenedComplete": false
+        }
+      ],
+      "hasIdentification": true,
+      "batteryRange": [
+        13,
+        38
+      ],
+      "models": {
+        "x": {
+          "Kv": 1.6108325153652254,
+          "tau": 0.869371896905777,
+          "L": 0.019766666666666665,
+          "nTrain": 3,
+          "nValid": 2,
+          "originalTrainP": [
+            64.085779887673453,
+            69.803791546713938,
+            76.197384510052
+          ],
+          "originalValidationP": [
+            64.813473560500668,
+            64.080593952038228
+          ],
+          "originalTrainT": [
+            64.03595314717262,
+            92.066292542164931,
+            97.770274226900185
+          ],
+          "originalValidationT": [
+            84.549135152935321,
+            85.39142146960252
+          ]
+        },
+        "y": {
+          "Kv": 0.95848514540700547,
+          "tau": 0.86763372770500291,
+          "L": 0,
+          "nTrain": 3,
+          "nValid": 2,
+          "originalTrainP": [
+            42.856096732296834,
+            46.058400867716344,
+            61.397460699611941
+          ],
+          "originalValidationP": [
+            69.319703781310452,
+            67.345140219417786
+          ],
+          "originalTrainT": [
+            88.095212585155352,
+            76.734249808093821,
+            68.90980292116096
+          ],
+          "originalValidationT": [
+            67.013816310456647,
+            56.919430805754679
+          ]
+        }
+      }
+    }
+  ],
+  "screenedComparisons": [
+    {
+      "sourceStamp": "171015",
+      "axis": "x",
+      "nominalBlock": 1,
+      "amplitude": 25,
+      "batteryMinimum": 47,
+      "belowStartBatteryThreshold": false,
+      "sourceModelRole": "external validation",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        56.186281709541376,
+        64.037300284881013,
+        58.978569133364722,
+        83.814041398503335
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.9940725883889987,
+          "maxAbsInputResidualCorrelation": 0.51376993100244961,
+          "pointwise99Bound": 0.19846153846153847,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.99585162813220052,
+          "maxAbsInputResidualCorrelation": 0.58088039577227535,
+          "pointwise99Bound": 0.19846153846153847,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "172242",
+      "axis": "x",
+      "nominalBlock": 1,
+      "amplitude": 25,
+      "batteryMinimum": 25,
+      "belowStartBatteryThreshold": true,
+      "sourceModelRole": "external validation",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        60.552071147292452,
+        68.861215341327949,
+        71.257525470456585,
+        75.538233407553776
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.99811288953202826,
+          "maxAbsInputResidualCorrelation": 0.58025137335559551,
+          "pointwise99Bound": 0.19905132145109858,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.99646952335856154,
+          "maxAbsInputResidualCorrelation": 0.5322089268993252,
+          "pointwise99Bound": 0.19905132145109858,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "172242",
+      "axis": "x",
+      "nominalBlock": 2,
+      "amplitude": 25,
+      "batteryMinimum": 22,
+      "belowStartBatteryThreshold": true,
+      "sourceModelRole": "external validation",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        60.241730461062424,
+        67.9690636476617,
+        51.594636743875611,
+        87.603999955196969
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.99395271229661075,
+          "maxAbsInputResidualCorrelation": 0.60558387830397953,
+          "pointwise99Bound": 0.18335261606582498,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.99485476174384524,
+          "maxAbsInputResidualCorrelation": 0.68271133506401183,
+          "pointwise99Bound": 0.18335261606582498,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "172242",
+      "axis": "x",
+      "nominalBlock": 3,
+      "amplitude": 40,
+      "batteryMinimum": 19,
+      "belowStartBatteryThreshold": true,
+      "sourceModelRole": "external validation",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        56.870896838199144,
+        57.9274588506421,
+        63.875105275642532,
+        81.244456920173974
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.99075892966639534,
+          "maxAbsInputResidualCorrelation": 0.70892562344318188,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.9939159252662908,
+          "maxAbsInputResidualCorrelation": 0.72720577740261094,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "174033",
+      "axis": "x",
+      "nominalBlock": 1,
+      "amplitude": 25,
+      "batteryMinimum": 46,
+      "belowStartBatteryThreshold": false,
+      "sourceModelRole": "training",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        46.758123493477363,
+        58.815569648970325,
+        75.9214182757842,
+        65.518332629200742
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.99798939434445921,
+          "maxAbsInputResidualCorrelation": 0.52410666877303136,
+          "pointwise99Bound": 0.19905132145109858,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.99154510092542347,
+          "maxAbsInputResidualCorrelation": 0.40335750910262852,
+          "pointwise99Bound": 0.19905132145109858,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "174033",
+      "axis": "x",
+      "nominalBlock": 2,
+      "amplitude": 25,
+      "batteryMinimum": 43,
+      "belowStartBatteryThreshold": false,
+      "sourceModelRole": "training",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        48.816803625257286,
+        56.964556932818844,
+        95.024436388830537,
+        71.050858603234175
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.99557267587763,
+          "maxAbsInputResidualCorrelation": 0.35979997894419,
+          "pointwise99Bound": 0.18381738896880689,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.98674347331755,
+          "maxAbsInputResidualCorrelation": 0.44532894338133472,
+          "pointwise99Bound": 0.18381738896880689,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "174633",
+      "axis": "x",
+      "nominalBlock": 1,
+      "amplitude": 25,
+      "batteryMinimum": 38,
+      "belowStartBatteryThreshold": false,
+      "sourceModelRole": "training",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        50.3392413469534,
+        64.115423999374642,
+        71.440114658064942,
+        64.132974014039917
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.99804998218775665,
+          "maxAbsInputResidualCorrelation": 0.59978292811731682,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.99447170989740641,
+          "maxAbsInputResidualCorrelation": 0.38139621163098636,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "174633",
+      "axis": "x",
+      "nominalBlock": 2,
+      "amplitude": 25,
+      "batteryMinimum": 34,
+      "belowStartBatteryThreshold": false,
+      "sourceModelRole": "training",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        60.770706572632662,
+        69.021796098574725,
+        58.546038558129588,
+        91.966007055075039
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.99296337193867812,
+          "maxAbsInputResidualCorrelation": 0.55590478135693222,
+          "pointwise99Bound": 0.18381738896880689,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.99554308691130733,
+          "maxAbsInputResidualCorrelation": 0.59835955532013951,
+          "pointwise99Bound": 0.18381738896880689,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "172242",
+      "axis": "y",
+      "nominalBlock": 1,
+      "amplitude": 25,
+      "batteryMinimum": 13,
+      "belowStartBatteryThreshold": true,
+      "sourceModelRole": "external validation",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        50.338651805840762,
+        53.118208016335863,
+        63.009995678192809,
+        80.7304791693121
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.98034077370362749,
+          "maxAbsInputResidualCorrelation": 0.55884714866026652,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.98013571515699727,
+          "maxAbsInputResidualCorrelation": 0.5584416372963108,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "172242",
+      "axis": "y",
+      "nominalBlock": 2,
+      "amplitude": 25,
+      "batteryMinimum": 11,
+      "belowStartBatteryThreshold": true,
+      "sourceModelRole": "external validation",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        55.977616194382954,
+        58.304661717447836,
+        69.06577533669045,
+        66.569396978963383
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.98719078803185445,
+          "maxAbsInputResidualCorrelation": 0.78563704432805892,
+          "pointwise99Bound": 0.18335261606582498,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.98759706577813944,
+          "maxAbsInputResidualCorrelation": 0.7904747740651985,
+          "pointwise99Bound": 0.18335261606582498,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "172242",
+      "axis": "y",
+      "nominalBlock": 3,
+      "amplitude": 40,
+      "batteryMinimum": 11,
+      "belowStartBatteryThreshold": true,
+      "sourceModelRole": "external validation",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        65.375888727790127,
+        66.552661148471,
+        75.108148180741267,
+        62.841054488192547
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.99063000243358834,
+          "maxAbsInputResidualCorrelation": 0.82316171239015612,
+          "pointwise99Bound": 0.19905132145109858,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.99146188323496254,
+          "maxAbsInputResidualCorrelation": 0.840646714392096,
+          "pointwise99Bound": 0.19905132145109858,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "174033",
+      "axis": "y",
+      "nominalBlock": 1,
+      "amplitude": 25,
+      "batteryMinimum": 33,
+      "belowStartBatteryThreshold": false,
+      "sourceModelRole": "training",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        79.701178432360976,
+        82.039033528082868,
+        90.595853103830109,
+        70.376345196880891
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.97601316853815567,
+          "maxAbsInputResidualCorrelation": 0.53843067013126966,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.97484858542505193,
+          "maxAbsInputResidualCorrelation": 0.52423609403816918,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "174033",
+      "axis": "y",
+      "nominalBlock": 2,
+      "amplitude": 25,
+      "batteryMinimum": 31,
+      "belowStartBatteryThreshold": false,
+      "sourceModelRole": "training",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        68.324580197571876,
+        70.7051240409164,
+        76.767467105794751,
+        67.0387325834178
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.97866957957685607,
+          "maxAbsInputResidualCorrelation": 0.82116850360480664,
+          "pointwise99Bound": 0.18381738896880689,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.97766900815333058,
+          "maxAbsInputResidualCorrelation": 0.81359163480829022,
+          "pointwise99Bound": 0.18381738896880689,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "174033",
+      "axis": "y",
+      "nominalBlock": 3,
+      "amplitude": 40,
+      "batteryMinimum": 29,
+      "belowStartBatteryThreshold": true,
+      "sourceModelRole": "validation",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        76.731262433608762,
+        78.839446077892688,
+        91.562337308718583,
+        68.156505848202258
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.97131467170343222,
+          "maxAbsInputResidualCorrelation": 0.44295809993133678,
+          "pointwise99Bound": 0.19905132145109858,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.9704358225091182,
+          "maxAbsInputResidualCorrelation": 0.47076700810063155,
+          "pointwise99Bound": 0.19905132145109858,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "174633",
+      "axis": "y",
+      "nominalBlock": 1,
+      "amplitude": 25,
+      "batteryMinimum": 17,
+      "belowStartBatteryThreshold": true,
+      "sourceModelRole": "training",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        38.810886048840452,
+        42.095877742447009,
+        52.169793691180665,
+        88.131242539389518
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.9869512103664374,
+          "maxAbsInputResidualCorrelation": 0.52560060461151425,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.98703760929397077,
+          "maxAbsInputResidualCorrelation": 0.516940208914374,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "174633",
+      "axis": "y",
+      "nominalBlock": 2,
+      "amplitude": 25,
+      "batteryMinimum": 16,
+      "belowStartBatteryThreshold": true,
+      "sourceModelRole": "training",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        42.418049444085085,
+        45.840670344939468,
+        65.267978489252741,
+        76.135278280915969
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.98293305922040275,
+          "maxAbsInputResidualCorrelation": 0.41936642471012719,
+          "pointwise99Bound": 0.18381738896880689,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.98275584945788219,
+          "maxAbsInputResidualCorrelation": 0.40991510010538929,
+          "pointwise99Bound": 0.18381738896880689,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    },
+    {
+      "sourceStamp": "174633",
+      "axis": "y",
+      "nominalBlock": 3,
+      "amplitude": 40,
+      "batteryMinimum": 16,
+      "belowStartBatteryThreshold": true,
+      "sourceModelRole": "validation",
+      "modelOrder": [
+        "174033 P1DI",
+        "174633 P1DI",
+        "174033 tfest",
+        "174633 tfest"
+      ],
+      "fits": [
+        67.429060781599091,
+        69.051227459662229,
+        80.004710075445033,
+        68.857443467798333
+      ],
+      "residualDiagnostics": [
+        {
+          "model": "174033 P1DI",
+          "maxAbsAcfExcludingZero": 0.984842923526777,
+          "maxAbsInputResidualCorrelation": 0.75024966912762014,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        },
+        {
+          "model": "174633 P1DI",
+          "maxAbsAcfExcludingZero": 0.98547416788875131,
+          "maxAbsInputResidualCorrelation": 0.77028060864683068,
+          "pointwise99Bound": 0.19964639399380732,
+          "whiteAt99": false,
+          "inputUncorrelatedAt99": false
+        }
+      ]
+    }
+  ]
+}

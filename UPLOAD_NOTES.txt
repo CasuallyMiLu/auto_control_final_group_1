@@ -1,0 +1,5 @@
+此包為覆蓋／合併至既有 repository 的相對路徑檔案集合，不是完整 repository。
+包含本次文件／離線審核更新，以及四份真機 run 的非影片檔案。
+未包含大型 MP4，請依日期時間另行備份與分享。
+請先閱讀 docs/sysid_handoff_20261110.md。模型尚未接受為正式控制模型，config 未更新。
+本次沒有 commit、push 或上傳。

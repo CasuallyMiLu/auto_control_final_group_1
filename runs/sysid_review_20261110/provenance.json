@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-10",
+  "analysis": "existing-model offline audit; no aircraft actuation",
+  "sourceSHA256": {
+    "README.md": "899dde68db83bafa77da8f6cdbabc8e072754be94db958c30f2b11039bc31bd7",
+    "docs/tello_sysid_offline_guide_zh.md": "94362f82e5cc590ca0cdfd7c7a34cfd03afd2d2d8e9428e38b5e5e2f9f48fcd6",
+    "matlab/sysid_tello.m": "65b764592de07601ac97e8d664deb626c90e94a1d12358af5c58822574e910e3",
+    "matlab/+ft/run_mission.m": "f9e950ac0101fd8766f5a9be733fc6d5a83d53a92bc136f07fe180affe97e960",
+    "config/model.json": "f72e9700abc3b85c5c9530b491416b3a1904fad983a72e05afd58ec8ee034f06",
+    "config/gains.json": "607af0675789d307718123c8a7580f08d30a80e710b31d2841b899a6730ea828",
+    "runs/20261110_171015_sysid_circle_matlab_real01/log.csv": "af2d64ed0a743b46a49490ef36a20532109f990290879a0c28b0e97da47eeaba",
+    "runs/20261110_171015_sysid_circle_matlab_real01/meta.json": "139afc85047b22e352d931d859793b9c16cde624e06e99f0c41798e8fabac028",
+    "runs/20261110_172242_sysid_circle_matlab_real01/log.csv": "f09ae3c844eb6979efa56dc392a38b0871a5d9b5793bd315242960531d878454",
+    "runs/20261110_172242_sysid_circle_matlab_real01/meta.json": "4624f5d243ad7f7e184c3028c3cb4ff236ff1d8f611b12f186b4c1563de162b9",
+    "runs/20261110_174033_sysid_circle_matlab_real01/log.csv": "8692faac8e89ffadbef9c902dfb449aa562cceaad648c89fd39a15ff993f65d5",
+    "runs/20261110_174033_sysid_circle_matlab_real01/meta.json": "3428340cdfeccd58ad15351e814424cb8a6fcb8d60f9184468d4cb674ffc2f1c",
+    "runs/20261110_174033_sysid_circle_matlab_real01/matlab_sysid.mat": "baf3dfda52ddc24249e650c2800b6115419cd6f9bc84e9fe7a18c3b28f435c1a",
+    "runs/20261110_174633_sysid_circle_matlab_real01/log.csv": "4b32b59612388b7bd23724d07b9d7555c9af041ed8e00d2d388db8f14cf5d7b0",
+    "runs/20261110_174633_sysid_circle_matlab_real01/meta.json": "0c076bddc2c7be7f76be3560c08e33ef942609966bd7146891c7160d7a8bcd9d",
+    "runs/20261110_174633_sysid_circle_matlab_real01/matlab_sysid.mat": "1ad1a59f2b33f2c5dd98ba369bf6af17daf0301c8909eec9ff208e717623c372"
+  },
+  "matlabVersion": "R2026a Update 5",
+  "liveConfigModified": false
+}
